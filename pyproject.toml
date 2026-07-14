@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ultrasonic-img-steg"
-version = "1.0.1"
-description = "A package that allows embedding images or encoding data into (and decoding from) the ultrasound frequencies of .wav files"
+version = "1.0.2"
+description = "A Python package that allows embedding images in or encoding and decoding data stored in the ultrasonic frequencies of lossless audio files"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
