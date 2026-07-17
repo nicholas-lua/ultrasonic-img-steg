@@ -40,10 +40,12 @@ jobs:
         run: |
           pip show jupyterlite-core
           pip show jupyterlite-xeus
+
+      - name: Install micromamba
+        uses: mamba-org/setup-micromamba@v2
           
       - name: Build JupyterLite Site
         run: |
-          # The --environment flag forces the builder to use your root environment.yml
           jupyter lite build --contents . --output-dir _output
 
       - name: Upload Pages Artifact
