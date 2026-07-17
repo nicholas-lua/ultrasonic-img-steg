@@ -1,0 +1,8 @@
+{
+  "XeusPythonAddon": {
+    "channels": [
+      "https://prefix.dev/emscripten-forge",
+      "https://prefix.dev/conda-forge"
+    ]
+  }
+}
