@@ -40,7 +40,6 @@ jobs:
         run: |
           pip show jupyterlite-core
           pip show jupyterlite-xeus
-          pip show jupyterlite-xeus-python
           
       - name: Build JupyterLite Site
         run: |
