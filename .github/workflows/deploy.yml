@@ -38,8 +38,11 @@ jobs:
 
       - name: Build JupyterLite Site
         run: |
-          # This builds everything in your repo root directly into the site
-          jupyter lite build --contents . --output-dir _output
+          # Builds everything in repo root directly into the site
+          jupyter lite build \
+            --contents . \
+            --output-dir _output \
+            --XeusPythonAddon.channels="['https://prefix.dev/emscripten-forge', 'conda-forge']"
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
