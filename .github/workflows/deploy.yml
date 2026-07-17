@@ -36,10 +36,11 @@ jobs:
           # jupyterlab is required to index the contents flag properly
           pip install "jupyterlite-core>=0.7,<0.8" "jupyterlite-xeus>=4,<5" jupyterlab
 
-      - name: Show versions
+      - name: Show package info
         run: |
-          python -c "import jupyterlite_core; print('jupyterlite-core:', jupyterlite_core.__version__)"
-          python -c "import jupyterlite_xeus_python; print('jupyterlite-xeus-python:', jupyterlite_xeus_python.__version__)"
+          pip show jupyterlite-core
+          pip show jupyterlite-xeus
+          pip show jupyterlite-xeus-python
           
       - name: Build JupyterLite Site
         run: |
